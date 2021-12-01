@@ -1,3 +1,0 @@
-as -o mov.o mov.s
-ld -o mov mov.o
-./mov

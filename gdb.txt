@@ -1,0 +1,25 @@
+gdb commands
+	* run  (r) : runs the program until it encounters a breakpoint
+	* list (l) : lists 10 lines of the file (including comments)
+	* list 1,1000 : lists lines from 1 to 1000
+	* dissasemble _start : shows the machine code starting with label _start
+	* breakpoint (b) _start : puts a breakpoint
+	* step (s) : step
+	* info registers (i r) : get info registers
+	* continue (c) : continue until next breakpoint
+	* info breakpoints (i b) : get a list with all the breakpoints
+	* delete [breakpoint number] : delete the breakpoint
+	* x /Nfu addr : display memory
+		* N : the number of objects to display
+		* f : the display format
+			* t : binary
+			* x : hexadecimal
+			* d : decimal
+			* i : instruction
+			* s : string
+		* u : unit size
+			* b : bytes
+			* h : halfwords (16 bits)
+			* w : words (32 bits)
+			* g : giant words (64 bits)
+	* quit (q) : exit gdb

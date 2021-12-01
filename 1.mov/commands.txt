@@ -1,0 +1,8 @@
+// Build
+make DEBUG=1
+
+// OR
+export DEBUG=1
+make
+export DEBUG=0
+make
