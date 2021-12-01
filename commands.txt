@@ -1,0 +1,5 @@
+# 0.hello_world
+as -o hello_world.o hello_world.s
+ld -o hello_world hello_world.o
+
+objdump -s -d hello_world.o

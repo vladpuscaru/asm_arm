@@ -1,0 +1,3 @@
+as -o add.o add.s
+ld -o add add.o
+./add
