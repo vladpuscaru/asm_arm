@@ -1,0 +1,33 @@
+Directive | Description
+.ascii    | A string contained in double quotes
+.asciz    | A zero-byte terminated ascii string
+
+.byte     | 1 byte integers
+.short    | 2 byte integers
+.word     | 4 byte integers
+.quad     | 8 byte integers
+.octa     | 16 byte integers
+
+.double   | Double precision floating-point values
+.float    | Floating-point values
+
+
+
+Specials
+
+.fill repeat, size, value
+Defines a larger block of memory
+zeros: .fill 10, 4, 0 @ Creates a block of memory with ten 4-byte words all with a value of zero.
+
+
+.rept count
+...
+.endr
+Repeats the statements between .rept and .endr, count times.
+rpn: .rept 3
+     .byte 0, 1, 2
+     .endr
+gets translated to
+.byte 0, 1, 2
+.byte 0, 1, 2
+.byte 0, 1, 2
